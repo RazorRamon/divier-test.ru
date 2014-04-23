@@ -28,7 +28,7 @@
 
 <body>
 	<header>
-		<a class="logo" href="#">
+		<a class="logo" href="/index.php">
 			<img src="/images/logo.png" />
 		</a>
 		<div class="top_menu">
