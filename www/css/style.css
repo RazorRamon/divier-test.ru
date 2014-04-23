@@ -1,0 +1,474 @@
+/* Verstal: V V P */
+/* ------ */
+/* FONTS */
+  
+/* General styles */
+
+html, body {
+	height: 100%;
+}
+
+* {
+	margin: 0px;
+}
+
+body {
+	width: 100%;
+	background: url('/images/background.png') repeat;
+}
+
+* {
+	-moz-box-sizing: border-box; /* Для Firefox */  
+	box-sizing: border-box; /* Ширина блока с полями */
+
+}
+
+.clear_div {
+	clear: both;
+}
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+header {
+	background: #fff;
+	width: 1000px;
+	margin: 0 auto;
+	height: 240px;
+	padding: 30px 10px;
+}
+
+header .logo {
+	display: block;
+	width: 300px;
+	margin: 0 0 70px 14px;
+}
+
+/* top_menu */
+
+header .top_menu {
+	position: relative;
+	width: 955px;
+	margin: 0 auto;
+	height: 39px;
+	background: -moz-linear-gradient(top, #f5f5f6, #ebebeb); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#f5f5f6), color-stop(100%,#ebebeb));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #f5f5f6, #ebebeb);
+    background: -o-linear-gradient(top, #f5f5f6, #ebebeb); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f5f5f6, #ebebeb); /* IE10 */
+    background: linear-gradient(top, #f5f5f6, #ebebeb); /* CSS3 */
+	
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Для Firefox */
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Для Safari и Chrome */
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Параметры тени */
+	z-index: 10;
+}
+
+header>.top_menu>ul:before {
+	position: absolute;
+	background: url('/images/dividers.png') 0px 0px no-repeat;
+	width: 7px;
+	height: 39px;
+	top: 0px;
+	content: '';
+	/*left: -7px;*/
+}
+
+header>.top_menu>ul{
+	position: relative;
+	width: 840px;
+	margin: auto;
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+}
+
+header>.top_menu>ul>li {
+	position: relative;
+	display: inline-block;
+	height: 39px;
+	padding: 0 17px;
+	cursor: pointer;
+}
+
+header>.top_menu>ul>li:after {
+	position: absolute;
+	background: url('/images/dividers.png') 0px 0px no-repeat;
+	width: 7px;
+	height: 39px;
+	top: 0px;
+	content: '';
+	right: -3px;
+}
+
+header>.top_menu>ul:last-child>li:after {
+	position: absolute;
+	background: url('/images/dividers.png') 0px 0px no-repeat;
+	width: 7px;
+	height: 39px;
+	top: 0px;
+	content: '';
+	right: -8px;
+}
+
+header>.top_menu>ul>li>a {
+    display: block;
+    line-height: 39px;
+	color: #355f9e;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: bold;
+	text-decoration: none;
+}
+
+header ul>li.active>a {
+	color: #000;
+}
+
+header ul>li:hover>a {
+	color: #000;
+}
+
+header ul>li>ul {
+	position: absolute;
+	background-color: #fff;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Для Firefox */
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Для Safari и Chrome */
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Параметры тени */
+	width: 175px;
+	height: 130px;
+	list-style: none;
+	z-index: 10;
+	display: none;
+	left: -3px;
+}
+
+header ul>li>ul:after {
+	background: none;
+	content: '';
+}
+
+header ul>li:hover>ul {
+	display: block;
+}
+
+header ul>li>ul>li {
+	float: none;
+	text-align: left;
+	width: 175px;
+	height: 25px;
+	margin: 5px 0 0 -20px;
+}
+
+header ul>li>ul>li>a {
+	color: #355f9e;
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+/* search */
+
+header .form_search {
+	background-color: #d9d9d9;
+	width: 957px;
+	margin: 0 auto;
+	height: 45px;
+	padding: 5px;
+}
+
+header .form_search form {
+	background: url('/images/lenz.png') 0px 5px no-repeat;
+	width: 450px;
+	padding: 4px 0 0 35px;
+	height: 35px;
+	margin: 0px auto;
+}
+
+header .form_search .search {
+	background-color: #fff;
+	padding: 3px 6px;
+	border: none;
+	width: 320px;
+	height: 22px;
+	color: #9A9A9A;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-right: 0px;
+}
+
+header .form_search .search::-webkit-input-placeholder {
+	color: #9A9A9A;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+}
+
+header .form_search .search:-moz-placeholder {
+	color: #9A9A9A;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+}
+
+header .form_search .search:-ms-input-placeholder {
+	color: #9A9A9A;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+}
+
+header .form_search .search .placeholder {
+	color: #9A9A9A;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+}
+
+header .form_search .button_form {
+	background-color: #f4f4f4;
+	vertical-align: middle;
+	color: #355f9e;
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+	width: 80px;
+	height: 22px;
+	border: none;
+	margin: 0 0 0 -5px;
+}
+
+/* ------- */
+/* CONTENT */
+/* ------- */
+
+#content_box {
+	position: relative;
+	background: #fff;
+    height: auto !important;
+    margin: 0 auto -100px;
+    min-height: 100%;
+	width: 1000px;
+	padding: 10px 5px 100px 20px;
+}
+
+/* left_menu */
+
+#content_box .left_menu {
+	float: left;
+	width: 140px;
+	margin: 0px 20px 0 0;
+}
+
+#content_box .left_menu h2 {
+	color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+	font-weight: bold;
+}
+
+#content_box .left_menu ul {
+	width: 140px;
+	list-style: none;
+	padding: 0px;
+	margin: 10px 0;
+}
+
+#content_box .left_menu ul li {
+	background: url('/images/marker-grey.png') 0px 5px no-repeat;
+	display: inline-block;
+	height: 24px;
+	padding: 0 17px;
+	cursor: pointer;
+}
+
+#content_box .left_menu ul li.active {
+	background: url('/images/marker-blue.png') 0px 5px no-repeat;
+}
+
+#content_box .left_menu ul li a {
+	color: #355f9e;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#content_box .left_menu ul li.active a {
+	color: #000;
+}
+
+#content_box .left_menu ul li:hover a {
+	color: #000;
+}
+
+/* right_sitebar */
+
+#content_box .right_sitebar {
+	float: right;
+	width: 770px;
+	margin: 10px 0px 0 0;
+}
+
+#content_box .right_sitebar h1 {
+	color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+	font-weight: bold;
+	margin: 15px 0 10px 51px;
+}
+
+#content_box .tovar {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 340px;
+	margin: 10px 0 40px 51px;
+}
+
+#content_box .novinka {
+	position: absolute;
+	background: url('/images/novinka.png') 0px 0px no-repeat;
+	width: 66px;
+	height: 17px;
+	z-index: 100;
+	right: 9px;
+}
+
+#content_box .tovar img {
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	border: 1px solid #fff;
+}
+
+#content_box .tovar p {
+	color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+	margin: 5px 0;
+}
+
+#content_box .checked p {
+	color: #f00;
+}
+
+#content_box .tovar p span {
+	color: #355f9e;
+}
+
+#content_box .checked p span {
+	color: #f00;
+}
+
+#content_box .tovar p.cost {
+    font-size: 15px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+#content_box .checked p.cost {
+	color: #f00;
+}
+
+#content_box .tovar button {
+	background-color: #e4e4e4;
+	vertical-align: middle;
+	color: #355f9e;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+	width: 100%;
+	height: 22px;
+	border: none;
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+#content_box .tovar button:hover {
+	color: #000;
+}
+
+#content_box .paginavi {
+	position: relative;
+	width: 100%;
+	margin: 10px auto;
+}
+
+#content_box .paginavi p {
+	color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+	margin: 5px 0;
+	text-align: center;
+}
+
+#content_box .paginavi div.pagin {
+	color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+	margin: 5px auto;
+	width: 470px;
+}
+
+#content_box .paginavi a {
+	line-height: 22px;
+	color: #355f9e;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#content_box .paginavi ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0px;
+	margin: 0px 10px;
+}
+
+#content_box .paginavi ul li {
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#content_box .paginavi ul li.active {
+	background-color: #efefef;
+	-webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#content_box .paginavi ul li a {
+	line-height: 22px;
+	color: #355f9e;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#content_box .paginavi ul li.active a {
+	color: #000;
+}
+
+#content_box .paginavi ul li:hover a {
+	color: #000;
+}
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+footer {
+	background: #fff;
+	width: 1000px;
+	margin: 0 auto;
+	height: 100px;
+	padding: 10px;
+}
